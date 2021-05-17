@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@0.1.0...@limbo-works/umbraco-client@0.1.1) (2021-05-17)
+
+
+### Bug Fixes
+
+* no longer export meta ([04dde2f](https://github.com/limbo-works/limbo-frontend/commit/04dde2fd94c19f7d1c87fe09e7bb237d380cdb61))
+
+
+
+
+
 # 0.1.0 (2021-05-17)
 
 
