@@ -10,7 +10,7 @@
 		"eslint": "eslint '**/*.{js,vue}'",
 		"lint": "yarn prettier --check && yarn eslint",
 		"lint:fix": "yarn prettier --write && yarn eslint --fix",
-		"test": "jest",
+		"test": "jest --passWithNoTests",
 		"build": "lerna run build",
 		"release": "yarn lint && yarn test && yarn build && lerna publish"
 	},
