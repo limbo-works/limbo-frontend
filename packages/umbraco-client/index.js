@@ -65,5 +65,3 @@ export default function UmbracoClientModule(moduleOptions) {
 
 	logger.debug('Proxy configured', nuxt.options.proxy);
 }
-
-module.exports.meta = require('./package.json');
