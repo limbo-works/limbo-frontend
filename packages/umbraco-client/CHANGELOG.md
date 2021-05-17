@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@0.1.1...@limbo-works/umbraco-client@0.1.2) (2021-05-17)
+
+
+### Bug Fixes
+
+* revert module to CommonJs format ([3ec67df](https://github.com/limbo-works/limbo-frontend/commit/3ec67df12c447068f1815d7e61259cac3184720d))
+
+
+
+
+
 ## [0.1.1](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@0.1.0...@limbo-works/umbraco-client@0.1.1) (2021-05-17)
 
 
