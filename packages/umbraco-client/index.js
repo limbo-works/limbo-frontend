@@ -1,8 +1,8 @@
-const path = require('path');
+import path from 'path';
 
-const consola = require('consola');
+import consola from 'consola';
 
-const packageJson = require('./package.json');
+import packageJson from './package.json';
 
 const { name } = packageJson;
 
@@ -14,7 +14,7 @@ const PROXY_ENDPOINTS = [
 	'/remote.axd',
 ];
 
-module.exports = function UmbracoClientModule(moduleOptions) {
+export default function UmbracoClientModule(moduleOptions) {
 	const { nuxt } = this;
 	const { logLevel } = {
 		logLevel: 3,
@@ -66,6 +66,6 @@ module.exports = function UmbracoClientModule(moduleOptions) {
 	};
 
 	logger.debug('Proxy configured', nuxt.options.proxy);
-};
+}
 
 module.exports.meta = packageJson;
