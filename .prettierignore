@@ -1,0 +1,8 @@
+node_modules
+.nuxt
+dist
+static
+dev
+package.json
+release.json
+CHANGELOG.md
