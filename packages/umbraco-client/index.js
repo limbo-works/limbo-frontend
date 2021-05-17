@@ -19,7 +19,7 @@ module.exports = function UmbracoClientModule(moduleOptions) {
 	const { logLevel } = {
 		logLevel: 3,
 
-		...this.options.umbracoClient,
+		...nuxt.options.umbracoClient,
 		...moduleOptions,
 	};
 	const logger = consola.withScope(`nuxt:${name}`);
