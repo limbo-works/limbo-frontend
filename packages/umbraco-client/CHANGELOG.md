@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@0.1.2...@limbo-works/umbraco-client@0.1.3) (2021-05-17)
+
+
+### Bug Fixes
+
+* read options from `nuxt` not `this` ([5eebc30](https://github.com/limbo-works/limbo-frontend/commit/5eebc3094e55dff2cbf8f0c750942ab4ff172834))
+
+
+
+
+
 ## [0.1.2](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@0.1.1...@limbo-works/umbraco-client@0.1.2) (2021-05-17)
 
 
