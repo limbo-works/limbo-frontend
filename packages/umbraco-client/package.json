@@ -1,0 +1,19 @@
+{
+	"name": "@limbo-works/umbraco-client",
+	"version": "0.0.0",
+	"description": "Fetch data from the Umbraco /getdata/ endpoint and handle errors",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "ssh://git@github.com/limbo-works/limbo-frontend.git",
+		"directory": "packages/umbraco-client"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
+	"author": "Saul Hardman <hello@iamsaul.co.uk>",
+	"license": "MIT",
+	"dependencies": {
+		"consola": "^2.15.0"
+	}
+}
