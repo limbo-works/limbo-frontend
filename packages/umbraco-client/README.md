@@ -123,6 +123,10 @@ export const actions = {
 	async nuxtServerInit({ dispatch }, { error, redirect, route }) {
 		const data = await fetchUmbracoData({ error, redirect, route });
 
+		if (!data) {
+			return;
+		}
+
 		dispatch('SAVE_DATA', data);
 	},
 };
