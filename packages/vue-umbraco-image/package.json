@@ -24,7 +24,8 @@
     "build": "yarn clean && cross-env NODE_ENV=production rollup --config ../../rollup.config.js"
   },
   "dependencies": {
-    "@babel/runtime": "^7.11.2"
+    "@babel/runtime": "^7.11.2",
+    "@limbo-works/vue-responsive-image": "^0.2.0"
   },
   "engines": {
     "node": ">=10"
