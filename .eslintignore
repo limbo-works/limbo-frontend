@@ -2,4 +2,3 @@ node_modules
 .nuxt
 dist
 static
-dev

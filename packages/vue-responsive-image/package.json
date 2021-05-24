@@ -1,0 +1,36 @@
+{
+  "name": "@limbo-works/vue-responsive-image",
+  "version": "0.0.0",
+  "description": "Vue component for rendering responsive images",
+  "author": "Saul Hardman <sha@limbo.works>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/limbo-works/limbo-frontend.git",
+    "directory": "packages/vue-responsive-image"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "main": "dist/vue-responsive-image.ssr.js",
+  "module": "dist/vue-responsive-image.modern.js",
+  "browser": "dist/vue-responsive-image.legacy.js",
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve dev/serve.js",
+    "clean": "rimraf dist/",
+    "build": "yarn clean && cross-env NODE_ENV=production rollup --config ../../rollup.config.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "lazysizes": "^5.3.2"
+  }
+}
