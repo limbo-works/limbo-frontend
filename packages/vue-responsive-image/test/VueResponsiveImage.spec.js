@@ -12,7 +12,7 @@ describe('VueResponsiveImage', () => {
 		});
 
 		expect(wrapper.html()).toContain(
-			'<img src="/example.jpg" class="v-responsive-image">'
+			'<img src="/example.jpg" class="c-responsive-image">'
 		);
 	});
 
