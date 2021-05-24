@@ -1,0 +1,32 @@
+{
+  "name": "@limbo-works/vue-umbraco-image",
+  "version": "0.0.0",
+  "description": "Vue component for rendering Umbraco content images",
+  "author": "Saul Hardman <sha@limbo.works>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/limbo-works/limbo-frontend.git",
+    "directory": "packages/vue-umbraco-image"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "main": "dist/vue-umbraco-image.ssr.js",
+  "module": "dist/vue-umbraco-image.modern.js",
+  "browser": "dist/vue-umbraco-image.legacy.js",
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
+  "scripts": {
+    "clean": "rimraf dist/",
+    "build": "yarn clean && cross-env NODE_ENV=production rollup --config ../../rollup.config.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
