@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/vue-umbraco-image@0.1.1...@limbo-works/vue-umbraco-image@0.1.2) (2021-05-24)
+
+
+### Bug Fixes
+
+* **VueUmbracoImage:** return value from `imageSizes` ([ba6a283](https://github.com/limbo-works/limbo-frontend/commit/ba6a2831cb311fe844f6379c79cb08dfac77d3a2))
+
+
+
+
+
 ## [0.1.1](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/vue-umbraco-image@0.1.0...@limbo-works/vue-umbraco-image@0.1.1) (2021-05-24)
 
 
