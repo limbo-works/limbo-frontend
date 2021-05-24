@@ -1,6 +1,6 @@
 <template>
 	<img
-		class="v-responsive-image"
+		class="c-responsive-image"
 		:class="{ lazyload: isSSR ? lazyload && !fallback : useLazysizes }"
 		v-bind="{ ...$attrs, ...attributes }"
 	/>
@@ -121,8 +121,8 @@ export default {
 </script>
 
 <style>
-.no-js .v-responsive-image[data-src],
-.no-js .v-responsive-image[data-srcset] {
+.no-js .c-responsive-image[data-src],
+.no-js .c-responsive-image[data-srcset] {
 	display: none;
 }
 </style>
