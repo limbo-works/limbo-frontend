@@ -35,7 +35,7 @@ export const imageSizes = (
 ) => {
 	const breakpointNames = Object.keys(breakpoints);
 
-	Object.entries(sizesByBreakpoint)
+	return Object.entries(sizesByBreakpoint)
 		.filter(([breakpointName]) => breakpointNames.includes(breakpointName))
 		.reduce(
 			(sizes, [breakpointName, size]) => [
