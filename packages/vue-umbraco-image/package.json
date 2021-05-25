@@ -1,6 +1,6 @@
 {
   "name": "@limbo-works/vue-umbraco-image",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Vue component for rendering Umbraco content images",
   "author": "Saul Hardman <sha@limbo.works>",
   "license": "MIT",
