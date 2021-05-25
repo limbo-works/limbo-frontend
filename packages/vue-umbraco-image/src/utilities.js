@@ -1,10 +1,6 @@
 // NOTE: in order to use the URL API we need to provide a base
 const DEFAULT_BASE_URL = 'https://example.com';
 
-export const FORMATS = {
-	webp: 'image/webp',
-};
-
 export const getUmbracoImageUrl = (
 	sourceUrl,
 	width,
