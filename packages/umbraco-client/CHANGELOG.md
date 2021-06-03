@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@0.1.5...@limbo-works/umbraco-client@0.2.0) (2021-06-03)
+
+
+### Features
+
+* **UmbracoClient:** add router middleware ([adc5376](https://github.com/limbo-works/limbo-frontend/commit/adc5376e7402258056701676e5996201894f9a2b))
+
+
+
+
+
 ## [0.1.5](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@0.1.4...@limbo-works/umbraco-client@0.1.5) (2021-05-24)
 
 **Note:** Version bump only for package @limbo-works/umbraco-client
