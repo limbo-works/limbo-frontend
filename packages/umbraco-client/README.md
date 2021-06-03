@@ -86,7 +86,7 @@ export default async ({
 
 	// NOTE: if we've reached this point then it's an *endpoint* 404
 	// rather than a content 404 (something is wrong with the API)
-	commit('CLEAR_CURRENT_DATA');
+	commit('_CLEAR_CURRENT_DATA');
 };
 ```
 
@@ -94,7 +94,7 @@ export default async ({
 // ~/frontend/store/index.js
 
 export const mutations = {
-	CLEAR_CURRENT_DATA(state) {
+	_CLEAR_CURRENT_DATA(state) {
 		state.current = {
 			page: {},
 			doctype: null,
@@ -151,7 +151,7 @@ starting point for other error pages:-
 		<component
 			:is="errorPage"
 			v-if="isContent404"
-			@hook:mounted="handleSubpageComponentMounted"
+			@hook:mounted="handleErrorPageComponentMounted"
 		/>
 
 		<div v-else>
@@ -225,7 +225,7 @@ export default {
 	},
 
 	methods: {
-		handleSubpageComponentMounted() {
+		handleErrorPageComponentMounted() {
 			this.$store.dispatch('Transition/END');
 		},
 	},
