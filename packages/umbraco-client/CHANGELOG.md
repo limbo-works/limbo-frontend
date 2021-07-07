@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@1.0.0...@limbo-works/umbraco-client@1.1.0) (2021-07-07)
+
+
+### Features
+
+* inject `baseURL` ([811f707](https://github.com/limbo-works/limbo-frontend/commit/811f7079f5223304a9dead14864cfc2910d236de))
+
+
+
+
+
 # [1.0.0](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@0.2.1...@limbo-works/umbraco-client@1.0.0) (2021-07-07)
 
 **Note:** Version bump only for package @limbo-works/umbraco-client
