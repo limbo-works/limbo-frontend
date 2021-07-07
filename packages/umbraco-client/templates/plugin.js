@@ -38,9 +38,11 @@ const getHostnameAndOrigin = (req, { API_DOMAIN, APP_HOST }) => {
 	return { hostname, origin };
 };
 
-export default ({ $axios, $config, req }) => {
+export default ({ $axios, $config, req }, inject) => {
 	const { origin: baseURL, hostname } = getHostnameAndOrigin(req, $config);
 	const httpClient = $axios.create({ baseURL });
+
+	inject('baseURL', baseURL);
 
 	configure({ hostname, httpClient });
 };
