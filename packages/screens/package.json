@@ -1,6 +1,6 @@
 {
   "name": "@limbo-works/screens",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.0",
   "description": "A tool for parsing TailwindCSS `screens` from the standard Limbo breakpoint format (as well as a helpful `breakpoints` object)",
   "author": "Saul Hardman <sha@limbo.works>",
   "license": "MIT",
