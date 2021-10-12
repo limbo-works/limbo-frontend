@@ -65,7 +65,7 @@ export default [
 						'@babel/preset-env',
 						{
 							targets: [
-								'node >= 14',
+								'node >= 10',
 								'last 2 chrome version',
 								'last 2 firefox versions',
 								'last 2 safari versions',
@@ -104,7 +104,7 @@ export default [
 					[
 						'@babel/preset-env',
 						{
-							targets: 'node >= 14',
+							targets: 'node >= 10',
 						},
 					],
 				],
