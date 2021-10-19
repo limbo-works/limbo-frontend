@@ -1,0 +1,32 @@
+{
+  "name": "@limbo-works/vue-limbo-link",
+  "version": "0.0.0",
+  "description": "Vue component that extends NuxtLink to handle internal and external URLs",
+  "author": "Saul Hardman <sha@limbo.works>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/limbo-works/limbo-frontend.git",
+    "directory": "packages/vue-limbo-link"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "main": "dist/vue-limbo-link.ssr.js",
+  "module": "dist/vue-limbo-link.modern.js",
+  "browser": "dist/vue-limbo-link.legacy.js",
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
+  "scripts": {
+    "clean": "rimraf dist/",
+    "build": "yarn clean && cross-env NODE_ENV=production rollup --config ../../rollup.config.vue.js"
+  },
+  "dependencies": {
+    "deepmerge": "^4.2.2"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
