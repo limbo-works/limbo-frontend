@@ -1,6 +1,6 @@
 {
   "name": "@limbo-works/vue-limbo-link",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.0",
   "description": "Vue component that extends NuxtLink to handle internal and external URLs",
   "author": "Saul Hardman <sha@limbo.works>",
   "license": "MIT",
