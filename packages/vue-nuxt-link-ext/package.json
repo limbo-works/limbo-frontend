@@ -1,0 +1,33 @@
+{
+  "name": "vue-nuxt-link-ext",
+  "version": "1.0.0",
+  "description": "An extension of NuxtLink which allows external linking.",
+  "author": "Simon Milfred <simonmilfred@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/limbo-works/limbo-frontend.git",
+    "directory": "packages/vue-nuxt-link-ext"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "main": "dist/vue-nuxt-link-ext.ssr.js",
+  "module": "dist/vue-nuxt-link-ext.modern.js",
+  "browser": "dist/vue-nuxt-link-ext.legacy.js",
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve dev/serve.js",
+    "clean": "rimraf dist/",
+    "build": "yarn clean && cross-env NODE_ENV=production rollup --config ../../rollup.config.vue.js"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
