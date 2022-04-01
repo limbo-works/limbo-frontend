@@ -1,0 +1,28 @@
+{
+  "name": "@limbo-works/screens",
+  "version": "0.0.1-alpha.0",
+  "description": "A tool for parsing TailwindCSS `screens` from the standard Limbo breakpoint format (as well as a helpful `breakpoints` object)",
+  "author": "Saul Hardman <sha@limbo.works>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/limbo-works/limbo-frontend.git",
+    "directory": "packages/screens"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.mjs",
+  "files": [
+    "dist/*",
+    "src/**/*.js"
+  ],
+  "scripts": {
+    "clean": "rimraf dist/",
+    "build": "yarn clean && cross-env NODE_ENV=production rollup --config ../../rollup.config.js"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
