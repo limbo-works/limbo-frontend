@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@1.1.0...@limbo-works/umbraco-client@1.2.0) (2022-04-22)
+
+
+### Features
+
+* **umbraco-client:** adding App_Plugins to proxy ([736d2bf](https://github.com/limbo-works/limbo-frontend/commit/736d2bf4c89cf32061519802dcc3ee624048454a))
+
+
+
+
+
 # [1.1.0](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@1.0.0...@limbo-works/umbraco-client@1.1.0) (2021-07-07)
 
 
