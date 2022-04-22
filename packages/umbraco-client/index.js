@@ -8,6 +8,7 @@ const { name } = packageJson;
 
 const PROXY_ENDPOINTS = [
 	'/umbraco',
+	'/App_Plugins',
 	'/api',
 	'/media',
 	'/formrender',
