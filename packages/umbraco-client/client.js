@@ -109,6 +109,7 @@ export default async ({ error: nuxtError, params = {}, redirect, route }) => {
 		const response = await fetchUmbracoData(route, params);
 		const { data } = response;
 
+		// To allow for API-appropriate response handling (meta)
 		const statusCode = data.meta?.code ?? 200;
 		if (statusCode !== 200) {
 			return handleError(
