@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@1.2.0...@limbo-works/umbraco-client@1.3.0) (2022-05-05)
+
+
+### Features
+
+* **umbraco-client:** now handles 200 meta codes ([03495bc](https://github.com/limbo-works/limbo-frontend/commit/03495bc60af3ea13841a52b3b8508b004a726526))
+
+
+
+
+
 # [1.2.0](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@1.1.0...@limbo-works/umbraco-client@1.2.0) (2022-04-22)
 
 
