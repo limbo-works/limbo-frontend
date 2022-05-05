@@ -31,7 +31,12 @@ export const fetchUmbracoData = (route, params = {}) => {
 };
 
 export const handleError = (error, { nuxtError, query = {}, redirect }) => {
-	const statusCode = parseInt(error.response?.status, 10);
+	const statusCode = parseInt(
+		error.response?.data?.meta?.code ?? error.response?.status,
+		10
+	);
+	const statusMessage =
+		error.response?.data?.meta?.error ?? error?.message ?? '';
 
 	if (
 		!error.response ||
@@ -44,7 +49,7 @@ export const handleError = (error, { nuxtError, query = {}, redirect }) => {
 
 		nuxtError({
 			statusCode: statusCode || BAD_REQUEST_STATUS_CODE,
-			message: error.message || 'Unknown Error',
+			message: statusMessage || 'Unknown Error',
 		});
 
 		return;
@@ -53,7 +58,7 @@ export const handleError = (error, { nuxtError, query = {}, redirect }) => {
 	if (statusCode === NOT_FOUND_STATUS_CODE) {
 		nuxtError({
 			statusCode,
-			message: 'Not Found',
+			message: statusMessage || 'Not Found',
 		});
 
 		return error.response?.data;
@@ -65,7 +70,6 @@ export const handleError = (error, { nuxtError, query = {}, redirect }) => {
 	) {
 		const {
 			data: {
-				meta = {},
 				data: { url: redirectUrl },
 			},
 		} = error.response;
@@ -75,7 +79,7 @@ export const handleError = (error, { nuxtError, query = {}, redirect }) => {
 			.filter(Boolean)
 			.join('?');
 
-		redirect(meta.code ?? statusCode, url);
+		redirect(statusCode, url);
 
 		return false;
 	}
@@ -102,7 +106,16 @@ export const handleError = (error, { nuxtError, query = {}, redirect }) => {
 
 export default async ({ error: nuxtError, params = {}, redirect, route }) => {
 	try {
-		const { data } = await fetchUmbracoData(route, params);
+		const response = await fetchUmbracoData(route, params);
+		const { data } = response;
+
+		const statusCode = data.meta?.code ?? 200;
+		if (statusCode !== 200) {
+			return handleError(
+				{ response },
+				{ nuxtError, query: route.query, redirect }
+			);
+		}
 
 		return data;
 	} catch (error) {
