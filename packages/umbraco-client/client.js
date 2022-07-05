@@ -104,9 +104,19 @@ export const handleError = (error, { nuxtError, query = {}, redirect }) => {
 	}
 };
 
-export default async ({ error: nuxtError, params = {}, redirect, route }) => {
+export default async ({
+	onResponse,
+	error: nuxtError,
+	params = {},
+	redirect,
+	route,
+}) => {
 	try {
-		const response = await fetchUmbracoData(route, params);
+		const response = await fetchUmbracoData(route, params).then(
+			(response) => {
+				return onResponse ? onResponse(response) : response;
+			}
+		);
 		const { data } = response;
 
 		// To allow for API-appropriate response handling (meta)
