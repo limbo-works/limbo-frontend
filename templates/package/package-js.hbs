@@ -1,0 +1,23 @@
+{
+    "name": "@limbo-works/{{ dashCase name }}",
+    "version": "0.0.0",
+    "description": "{{description}}",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@github.com/limbo-works/limbo-frontend.git",
+        "directory": "packages/{{ dashCase name }}"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
+    "scripts": {
+        "serve": "yarn && node dev/entry.js"
+    },
+    "author": "Limbo",
+    "license": "MIT",
+    "dependencies": {
+        "consola": "^2.15.0"
+    },
+    "type": "module"
+}
