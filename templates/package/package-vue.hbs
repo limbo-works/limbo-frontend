@@ -1,0 +1,33 @@
+{
+  "name": "@limbo-works/{{ dashCase name }}",
+  "version": "0.0.0",
+  "description": "{{ description }}",
+  "author": "Limbo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/limbo-works/limbo-frontend.git",
+    "directory": "packages/{{ dashCase name }}"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "main": "dist/{{ dashCase name }}.ssr.js",
+  "module": "dist/{{ dashCase name }}.modern.js",
+  "browser": "dist/{{ dashCase name }}.legacy.js",
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
+  "scripts": {
+    "clean": "rimraf dist/",
+    "serve": "yarn && vue-cli-service serve dev/entry.js",
+    "build": "yarn clean && cross-env NODE_ENV=production rollup --config ../../rollup.config.vue.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
