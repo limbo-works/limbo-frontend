@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.1-alpha.0](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@1.4.0...@limbo-works/umbraco-client@1.4.1-alpha.0) (2022-09-13)
+
+
+### Features
+
+* **umbraco-client:** app_host fallback to req host ([929eb79](https://github.com/limbo-works/limbo-frontend/commit/929eb796d58b5f1f26c6112d72839bbf92cd414f))
+
+
+
+
+
 # [1.4.0](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@1.3.1...@limbo-works/umbraco-client@1.4.0) (2022-07-05)
 
 
