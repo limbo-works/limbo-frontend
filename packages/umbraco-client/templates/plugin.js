@@ -8,7 +8,7 @@ const getHostnameAndOrigin = (req, { API_DOMAIN, APP_HOST }) => {
 	}
 
 	if (!APP_HOST) {
-		// Default to the request host
+		// Default to the request host, if no APP_HOST is set through config
 		APP_HOST = req.headers.host;
 
 		if (process.env.NODE_ENV === 'development') {
