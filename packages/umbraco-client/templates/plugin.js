@@ -7,19 +7,22 @@ const getHostnameAndOrigin = (req, { API_DOMAIN, APP_HOST }) => {
 		return { hostname: APP_HOST ?? hostname, origin };
 	}
 
+	if (!APP_HOST) {
+		// Default to the request host
+		APP_HOST = req.headers.host;
+
+		if (process.env.NODE_ENV === 'development') {
+			console.warn("Missing $config variable 'APP_HOST'");
+		}
+	}
+
 	if (API_DOMAIN && APP_HOST) {
 		return { origin: API_DOMAIN, hostname: APP_HOST };
-	} else if (process.env.NODE_ENV === 'development') {
-		if (!API_DOMAIN) {
-			throw new Error(
-				`Missing $config variable: { 'API_DOMAIN': ${API_DOMAIN} }`
-			);
-		}
+	}
 
-		if (!APP_HOST) {
-			throw new Error(
-				`Missing $config variable: { 'APP_HOST': ${APP_HOST} }`
-			);
+	if (process.env.NODE_ENV === 'development') {
+		if (!API_DOMAIN) {
+			throw new Error("Missing $config variable 'API_DOMAIN'");
 		}
 
 		return;
