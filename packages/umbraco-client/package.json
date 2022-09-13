@@ -1,6 +1,6 @@
 {
 	"name": "@limbo-works/umbraco-client",
-	"version": "1.4.1-alpha.0",
+	"version": "1.5.0",
 	"description": "Fetch data from the Umbraco /getdata/ endpoint and handle errors",
 	"main": "index.js",
 	"repository": {
