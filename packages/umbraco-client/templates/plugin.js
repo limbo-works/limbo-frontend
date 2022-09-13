@@ -12,9 +12,7 @@ const getHostnameAndOrigin = (req, { API_DOMAIN, APP_HOST }) => {
 		APP_HOST = req.headers.host;
 
 		if (process.env.NODE_ENV === 'development') {
-			console.warn(
-				`Missing $config variable: { 'APP_HOST': ${APP_HOST} }`
-			);
+			console.warn("Missing $config variable 'APP_HOST'");
 		}
 	}
 
@@ -24,9 +22,7 @@ const getHostnameAndOrigin = (req, { API_DOMAIN, APP_HOST }) => {
 
 	if (process.env.NODE_ENV === 'development') {
 		if (!API_DOMAIN) {
-			throw new Error(
-				`Missing $config variable: { 'API_DOMAIN': ${API_DOMAIN} }`
-			);
+			throw new Error("Missing $config variable 'API_DOMAIN'");
 		}
 
 		return;
