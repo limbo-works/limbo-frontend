@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@1.5.1...@limbo-works/umbraco-client@2.0.0) (2022-09-28)
+
+
+### Features
+
+* changed internal use of hostname to be host instead ([7e31a11](https://github.com/limbo-works/limbo-frontend/commit/7e31a1160fcae47f9c2d558df95b41a15a1714a2))
+
+
+
+
+
 ## [1.5.1](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@1.5.0...@limbo-works/umbraco-client@1.5.1) (2022-09-13)
 
 **Note:** Version bump only for package @limbo-works/umbraco-client
