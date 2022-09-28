@@ -9,14 +9,14 @@ const parts = ['content', 'navigation', process.server && 'site']
 	.filter(Boolean)
 	.join(',');
 
-let hostname;
+let host;
 let httpClient;
 
-export const configure = (options) => ({ hostname, httpClient } = options);
+export const configure = (options) => ({ host, httpClient } = options);
 
 export const fetchUmbracoData = (route, params = {}) => {
 	const urlSearchParams = new URLSearchParams({
-		appHost: hostname,
+		appHost: host,
 		navContext: process.server,
 		navLevels: 2,
 		parts,
