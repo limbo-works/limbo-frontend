@@ -24,7 +24,7 @@ export const fetchUmbracoData = (route, params = {}) => {
 
 		...params,
 	});
-	urlSearchParams.remove('headers');
+	urlSearchParams.delete('headers');
 
 	return httpClient.get(
 		`${UMBRACO_GET_DATA_ENDPOINT}?${urlSearchParams.toString()}`,
