@@ -1513,7 +1513,7 @@ export default {
 			// multiple choice array
 			const multipeChoiceArray = [];
 			// eslint-disable-next-line no-restricted-syntax
-			for (const [field] of Object.entries(this.fieldsObject)) {
+			for (const [id, field] of Object.entries(this.fieldsObject)) {
 				if (field.type.name !== 'File upload') {
 					if (field.type.name === 'Multiple choice') {
 						multipeChoiceArray.push(field.alias);
