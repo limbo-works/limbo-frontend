@@ -1556,18 +1556,21 @@ export default {
 				},
 				body: JSON.stringify(data),
 			});
-			if (response.status === 202 || response.status === 204) {
+
+			const json = await response.json();
+
+			if (json.status === 202 || json.status === 204) {
 				this.formIsLoading = false;
 				this.formSuccess = true;
-			} else if (response.status === 422) {
+			} else if (json.status === 422) {
 				this.formIsLoading = false;
-				this.formErrors = response.errors;
+				this.formErrors = json.errors;
 
 				let goToPage = null;
 				/* eslint-disable */
-				for (const [key] of Object.entries(response.errors)) {
+				for (const [key] of Object.entries(json.errors)) {
 					const field = this.flatFields.find(field => field.alias === key);
-					if (field.page < goToPage || goToPage === null) {
+					if (field && field.page < goToPage || field && goToPage === null) {
 						goToPage = field.page;
 					}
 				}
