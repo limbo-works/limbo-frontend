@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@2.1.1...@limbo-works/umbraco-client@2.2.0) (2024-01-24)
+
+
+### Features
+
+* updated umbraco client with endpoint url ([4f7345f](https://github.com/limbo-works/limbo-frontend/commit/4f7345fd2b37da41fc56f2523bd8ee60b39e60b7))
+
+
+
+
+
 ## [2.1.1](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/umbraco-client@2.1.0...@limbo-works/umbraco-client@2.1.1) (2023-08-10)
 
 
