@@ -14,7 +14,11 @@ let httpClient;
 
 export const configure = (options) => ({ host, httpClient } = options);
 
-export const fetchUmbracoData = (route, params = {}) => {
+export const fetchUmbracoData = (
+	route,
+	params = {},
+	endpointUrl = UMBRACO_GET_DATA_ENDPOINT
+) => {
 	const urlSearchParams = new URLSearchParams({
 		appHost: host,
 		navContext: process.server,
@@ -26,12 +30,9 @@ export const fetchUmbracoData = (route, params = {}) => {
 	});
 	urlSearchParams.delete('headers');
 
-	return httpClient.get(
-		`${UMBRACO_GET_DATA_ENDPOINT}?${urlSearchParams.toString()}`,
-		{
-			headers: params?.headers || {},
-		}
-	);
+	return httpClient.get(`${endpointUrl}?${urlSearchParams.toString()}`, {
+		headers: params?.headers || {},
+	});
 };
 
 export const handleError = (error, { nuxtError, query = {}, redirect }) => {
@@ -109,6 +110,7 @@ export const handleError = (error, { nuxtError, query = {}, redirect }) => {
 };
 
 export default async ({
+	endpointUrl = UMBRACO_GET_DATA_ENDPOINT,
 	onResponse,
 	error: nuxtError,
 	params = {},
@@ -116,11 +118,13 @@ export default async ({
 	route,
 }) => {
 	try {
-		const response = await fetchUmbracoData(route, params).then(
-			(response) => {
-				return onResponse ? onResponse(response) : response;
-			}
-		);
+		const response = await fetchUmbracoData(
+			route,
+			params,
+			endpointUrl
+		).then((response) => {
+			return onResponse ? onResponse(response) : response;
+		});
 		const { data } = response;
 
 		// To allow for API-appropriate response handling (meta)

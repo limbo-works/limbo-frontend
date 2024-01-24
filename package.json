@@ -6,8 +6,8 @@
 	],
 	"scripts": {
 		"postinstall": "husky install",
-		"prettier": "prettier '**/*.{js,vue,md,yml,css,scss,json}'",
-		"eslint": "eslint '**/*.{js,vue}'",
+		"prettier": "prettier './packages/**/*.{js,vue,md,yml,css,scss,json}'",
+		"eslint": "eslint './packages/**/*.{js,vue}'",
 		"lint": "yarn prettier --check && yarn eslint",
 		"lint:fix": "yarn prettier --write && yarn eslint --fix",
 		"test": "jest --passWithNoTests",
