@@ -1,6 +1,6 @@
 <template>
 	<div
-        v-if="dataReady"
+		v-if="dataReady"
 		class="c-umbraco-forms"
 		:class="formIsLoading ? 'c-umbraco-forms--loading' : ''"
 	>
@@ -147,13 +147,15 @@
 														.showIndicator
 												"
 												v-text="definitions.indicator"
-											/>
+											></span>
 										</label>
 										<div
 											v-if="field.helpText"
-											class="c-umbraco-forms__field-help-text"
+											class="
+												c-umbraco-forms__field-help-text
+											"
 											v-text="field.helpText"
-										/>
+										></div>
 										<input
 											v-model="
 												fieldsObject[field.id].value
@@ -170,7 +172,9 @@
 												formErrors[field.alias] &&
 												!hideFieldValidation
 											"
-											class="c-umbraco-forms__field-error-message"
+											class="
+												c-umbraco-forms__field-error-message
+											"
 											role="alert"
 										>
 											{{ formErrors[field.alias][0] }}
@@ -212,13 +216,15 @@
 														v-text="
 															definitions.indicator
 														"
-													/>
+													></span>
 												</label>
 												<div
 													v-if="field.helpText"
-													class="c-umbraco-forms__field-help-text"
+													class="
+														c-umbraco-forms__field-help-text
+													"
 													v-text="field.helpText"
-												/>
+												></div>
 												<input
 													v-model="
 														fieldsObject[field.id]
@@ -233,7 +239,9 @@
 													v-if="
 														formErrors[field.alias]
 													"
-													class="c-umbraco-forms__field-error-message"
+													class="
+														c-umbraco-forms__field-error-message
+													"
 													role="alert"
 												>
 													{{
@@ -269,13 +277,15 @@
 														.showIndicator
 												"
 												v-text="definitions.indicator"
-											/>
+											></span>
 										</label>
 										<div
 											v-if="field.helpText"
-											class="c-umbraco-forms__field-help-text"
+											class="
+												c-umbraco-forms__field-help-text
+											"
 											v-text="field.helpText"
-										/>
+										></div>
 										<input
 											v-model="
 												fieldsObject[field.id].value
@@ -288,7 +298,9 @@
 												formErrors[field.alias] &&
 												!hideFieldValidation
 											"
-											class="c-umbraco-forms__field-error-message"
+											class="
+												c-umbraco-forms__field-error-message
+											"
 											role="alert"
 										>
 											{{ formErrors[field.alias][0] }}
@@ -325,13 +337,15 @@
 													v-text="
 														definitions.indicator
 													"
-												/>
+												></span>
 											</label>
 											<div
 												v-if="field.helpText"
-												class="c-umbraco-forms__field-help-text"
+												class="
+													c-umbraco-forms__field-help-text
+												"
 												v-text="field.helpText"
-											/>
+											></div>
 											<input
 												v-model="
 													fieldsObject[field.id].value
@@ -346,7 +360,9 @@
 													formErrors[field.alias] &&
 													!hideFieldValidation
 												"
-												class="c-umbraco-forms__field-error-message"
+												class="
+													c-umbraco-forms__field-error-message
+												"
 												role="alert"
 											>
 												{{ formErrors[field.alias][0] }}
@@ -383,13 +399,15 @@
 													v-text="
 														definitions.indicator
 													"
-												/>
+												></span>
 											</label>
 											<div
 												v-if="field.helpText"
-												class="c-umbraco-forms__field-help-text"
+												class="
+													c-umbraco-forms__field-help-text
+												"
 												v-text="field.helpText"
-											/>
+											></div>
 											<input
 												v-model="
 													fieldsObject[field.id].value
@@ -404,7 +422,9 @@
 													formErrors[field.alias] &&
 													!hideFieldValidation
 												"
-												class="c-umbraco-forms__field-error-message"
+												class="
+													c-umbraco-forms__field-error-message
+												"
 												role="alert"
 											>
 												{{ formErrors[field.alias][0] }}
@@ -438,13 +458,15 @@
 													v-text="
 														definitions.indicator
 													"
-												/>
+												></span>
 											</label>
 											<div
 												v-if="field.helpText"
-												class="c-umbraco-forms__field-help-text"
+												class="
+													c-umbraco-forms__field-help-text
+												"
 												v-text="field.helpText"
-											/>
+											></div>
 											<input
 												v-model="
 													fieldsObject[field.id].value
@@ -459,7 +481,9 @@
 													formErrors[field.alias] &&
 													!hideFieldValidation
 												"
-												class="c-umbraco-forms__field-error-message"
+												class="
+													c-umbraco-forms__field-error-message
+												"
 												role="alert"
 											>
 												{{ formErrors[field.alias][0] }}
@@ -496,13 +520,15 @@
 													v-text="
 														definitions.indicator
 													"
-												/>
+												></span>
 											</label>
 											<div
 												v-if="field.helpText"
-												class="c-umbraco-forms__field-help-text"
+												class="
+													c-umbraco-forms__field-help-text
+												"
 												v-text="field.helpText"
-											/>
+											></div>
 											<input
 												v-model="
 													fieldsObject[field.id].value
@@ -517,7 +543,9 @@
 													formErrors[field.alias] &&
 													!hideFieldValidation
 												"
-												class="c-umbraco-forms__field-error-message"
+												class="
+													c-umbraco-forms__field-error-message
+												"
 												role="alert"
 											>
 												{{ formErrors[field.alias][0] }}
@@ -554,13 +582,15 @@
 													v-text="
 														definitions.indicator
 													"
-												/>
+												></span>
 											</label>
 											<div
 												v-if="field.helpText"
-												class="c-umbraco-forms__field-help-text"
+												class="
+													c-umbraco-forms__field-help-text
+												"
 												v-text="field.helpText"
-											/>
+											></div>
 											<input
 												v-model="
 													fieldsObject[field.id].value
@@ -575,7 +605,9 @@
 													formErrors[field.alias] &&
 													!hideFieldValidation
 												"
-												class="c-umbraco-forms__field-error-message"
+												class="
+													c-umbraco-forms__field-error-message
+												"
 												role="alert"
 											>
 												{{ formErrors[field.alias][0] }}
@@ -609,13 +641,15 @@
 													v-text="
 														definitions.indicator
 													"
-												/>
+												></span>
 											</label>
 											<div
 												v-if="field.helpText"
-												class="c-umbraco-forms__field-help-text"
+												class="
+													c-umbraco-forms__field-help-text
+												"
 												v-text="field.helpText"
-											/>
+											></div>
 											<input
 												v-model="
 													fieldsObject[field.id].value
@@ -630,7 +664,9 @@
 													formErrors[field.alias] &&
 													!hideFieldValidation
 												"
-												class="c-umbraco-forms__field-error-message"
+												class="
+													c-umbraco-forms__field-error-message
+												"
 												role="alert"
 											>
 												{{ formErrors[field.alias][0] }}
@@ -657,13 +693,15 @@
 														.showIndicator
 												"
 												v-text="definitions.indicator"
-											/>
+											></span>
 										</label>
 										<div
 											v-if="field.helpText"
-											class="c-umbraco-forms__field-help-text"
+											class="
+												c-umbraco-forms__field-help-text
+											"
 											v-text="field.helpText"
-										/>
+										></div>
 										<input
 											v-bind="bindDefaultValues(field)"
 											v-model="
@@ -676,7 +714,9 @@
 												formErrors[field.alias] &&
 												!hideFieldValidation
 											"
-											class="c-umbraco-forms__field-error-message"
+											class="
+												c-umbraco-forms__field-error-message
+											"
 											role="alert"
 										>
 											{{ formErrors[field.alias][0] }}
@@ -704,13 +744,13 @@
 													.showIndicator
 											"
 											v-text="definitions.indicator"
-										/>
+										></span>
 									</label>
 									<div
 										v-if="field.helpText"
 										class="c-umbraco-forms__field-help-text"
 										v-text="field.helpText"
-									/>
+									></div>
 									<textarea
 										v-model="fieldsObject[field.id].value"
 										v-bind="bindDefaultValues(field)"
@@ -722,7 +762,9 @@
 											formErrors[field.alias] &&
 											!hideFieldValidation
 										"
-										class="c-umbraco-forms__field-error-message"
+										class="
+											c-umbraco-forms__field-error-message
+										"
 										role="alert"
 									>
 										{{ formErrors[field.alias][0] }}
@@ -744,13 +786,13 @@
 													.showIndicator
 											"
 											v-text="definitions.indicator"
-										/>
+										></span>
 									</label>
 									<div
 										v-if="field.helpText"
 										class="c-umbraco-forms__field-help-text"
 										v-text="field.helpText"
-									/>
+									></div>
 									<input
 										v-model="fieldsObject[field.id].value"
 										type="date"
@@ -761,7 +803,9 @@
 											formErrors[field.alias] &&
 											!hideFieldValidation
 										"
-										class="c-umbraco-forms__field-error-message"
+										class="
+											c-umbraco-forms__field-error-message
+										"
 										role="alert"
 									>
 										{{ formErrors[field.alias][0] }}
@@ -793,13 +837,15 @@
 														.showIndicator
 												"
 												v-text="definitions.indicator"
-											/>
+											></span>
 										</label>
 										<div
 											v-if="field.helpText"
-											class="c-umbraco-forms__field-help-text"
+											class="
+												c-umbraco-forms__field-help-text
+											"
 											v-text="field.helpText"
-										/>
+										></div>
 										<input
 											v-model="
 												fieldsObject[field.id].value
@@ -812,7 +858,9 @@
 												formErrors[field.alias] &&
 												!hideFieldValidation
 											"
-											class="c-umbraco-forms__field-error-message"
+											class="
+												c-umbraco-forms__field-error-message
+											"
 											role="alert"
 										>
 											{{ formErrors[field.alias][0] }}
@@ -849,13 +897,13 @@
 													.showIndicator
 											"
 											v-text="definitions.indicator"
-										/>
+										></span>
 									</label>
 									<div
 										v-if="field.helpText"
 										class="c-umbraco-forms__field-help-text"
 										v-text="field.helpText"
-									/>
+									></div>
 									<input
 										v-bind="bindDefaultValues(field)"
 										v-model="fieldsObject[field.id].value"
@@ -866,7 +914,9 @@
 											formErrors[field.alias] &&
 											!hideFieldValidation
 										"
-										class="c-umbraco-forms__field-error-message"
+										class="
+											c-umbraco-forms__field-error-message
+										"
 										role="alert"
 									>
 										{{ formErrors[field.alias][0] }}
@@ -893,30 +943,41 @@
 													.showIndicator
 											"
 											v-text="definitions.indicator"
-										/>
+										></span>
 									</p>
 									<div
 										v-if="field.helpText"
 										class="c-umbraco-forms__field-help-text"
 										v-text="field.helpText"
-									/>
+									></div>
 									<label
-										v-for="radio in field.preValues"
+										v-for="(
+											radio, index
+										) in field.preValues"
 										:key="radio.value"
 									>
 										<input
-											v-bind="bindDefaultValues(field)"
+											v-bind="
+												bindDefaultValues(field, index)
+											"
 											type="radio"
 											:value="radio.value"
 										/>
-										{{ radio.caption }}
+										{{
+											radio.caption &&
+											radio.caption.length
+												? radio.caption
+												: radio.value
+										}}
 									</label>
 									<div
 										v-if="
 											formErrors[field.alias] &&
 											!hideFieldValidation
 										"
-										class="c-umbraco-forms__field-error-message"
+										class="
+											c-umbraco-forms__field-error-message
+										"
 										role="alert"
 									>
 										{{ formErrors[field.alias][0] }}
@@ -945,20 +1006,31 @@
 													.showIndicator
 											"
 											v-text="definitions.indicator"
-										/>
+										></span>
+
+										{{
+											field.caption &&
+											field.caption.length
+												? field.caption
+												: field.value
+										}}
 									</p>
 									<div
 										v-if="field.helpText"
 										class="c-umbraco-forms__field-help-text"
 										v-text="field.helpText"
-									/>
+									></div>
 
 									<label
-										v-for="radio in field.preValues"
+										v-for="(
+											radio, index
+										) in field.preValues"
 										:key="radio.value"
 									>
 										<input
-											v-bind="bindDefaultValues(field)"
+											v-bind="
+												bindDefaultValues(field, index)
+											"
 											type="checkbox"
 											:value="radio.value"
 										/>
@@ -969,7 +1041,9 @@
 											formErrors[field.alias] &&
 											!hideFieldValidation
 										"
-										class="c-umbraco-forms__field-error-message"
+										class="
+											c-umbraco-forms__field-error-message
+										"
 										role="alert"
 									>
 										{{ formErrors[field.alias][0] }}
@@ -996,24 +1070,35 @@
 													.showIndicator
 											"
 											v-text="definitions.indicator"
-										/>
+										></span>
 									</label>
 									<div
 										v-if="field.helpText"
 										class="c-umbraco-forms__field-help-text"
 										v-text="field.helpText"
-									/>
-									<input
-										v-bind="bindDefaultValues(field)"
-										v-model="fieldsObject[field.id].value"
-										type="checkbox"
-									/>
+									></div>
+									<label>
+										<input
+											v-bind="bindDefaultValues(field)"
+											v-model="
+												fieldsObject[field.id].value
+											"
+											type="checkbox"
+										/>
+
+										{{
+											field.settings &&
+											field.settings.acceptCopy
+										}}
+									</label>
 									<div
 										v-if="
 											formErrors[field.alias] &&
 											!hideFieldValidation
 										"
-										class="c-umbraco-forms__field-error-message"
+										class="
+											c-umbraco-forms__field-error-message
+										"
 										role="alert"
 									>
 										{{ formErrors[field.alias][0] }}
@@ -1037,31 +1122,41 @@
 													.showIndicator
 											"
 											v-text="definitions.indicator"
-										/>
+										></span>
 									</label>
 									<div
 										v-if="field.helpText"
 										class="c-umbraco-forms__field-help-text"
 										v-text="field.helpText"
-									/>
-									<select
-										v-model="fieldsObject[field.id].value"
-										v-bind="bindDefaultValues(field)"
+									></div>
+									<div
+										class="
+											c-umbraco-forms__select-container
+										"
 									>
-										<option
-											v-for="option in field.preValues"
-											:key="option.value"
-											:value="option.value"
+										<select
+											v-model="
+												fieldsObject[field.id].value
+											"
+											v-bind="bindDefaultValues(field)"
 										>
-											{{ option.caption }}
-										</option>
-									</select>
+											<option
+												v-for="option in field.preValues"
+												:key="option.value"
+												:value="option.value"
+											>
+												{{ option.caption }}
+											</option>
+										</select>
+									</div>
 									<div
 										v-if="
 											formErrors[field.alias] &&
 											!hideFieldValidation
 										"
-										class="c-umbraco-forms__field-error-message"
+										class="
+											c-umbraco-forms__field-error-message
+										"
 										role="alert"
 									>
 										{{ formErrors[field.alias][0] }}
@@ -1085,14 +1180,14 @@
 													.showIndicator
 											"
 											v-text="definitions.indicator"
-										/>
+										></span>
 									</label>
 									<div
 										v-if="field.helpText"
 										class="c-umbraco-forms__field-help-text"
 										v-text="field.helpText"
-									/>
-                                    <!-- eslint-disable -->
+									></div>
+									<!-- eslint-disable -->
 									<input
 										v-bind="bindDefaultValues(field)"
 										type="file"
@@ -1103,13 +1198,15 @@
 												: field.fileUploadOptions.allowedUploadExtensions.toString()
 										"
 									/>
-                                     <!-- eslint-enable -->
+									<!-- eslint-enable -->
 									<div
 										v-if="
 											formErrors[field.alias] &&
 											!hideFieldValidation
 										"
-										class="c-umbraco-forms__field-error-message"
+										class="
+											c-umbraco-forms__field-error-message
+										"
 										role="alert"
 									>
 										{{ formErrors[field.alias][0] }}
@@ -1165,7 +1262,10 @@
 				<footer class="c-umbraco-forms__buttons">
 					<button
 						type="button"
-						class="c-umbraco-forms__button c-umbraco-forms__button--prev"
+						class="
+							c-umbraco-forms__button
+							c-umbraco-forms__button--prev
+						"
 						:hidden="currentPage === 0 ? 'hidden' : null"
 						:class="
 							currentPage === 0
@@ -1178,7 +1278,10 @@
 					</button>
 					<button
 						type="button"
-						class="c-umbraco-forms__button c-umbraco-forms__button--next"
+						class="
+							c-umbraco-forms__button
+							c-umbraco-forms__button--next
+						"
 						:hidden="
 							currentPage === pages.length - 1 ? 'hidden' : null
 						"
@@ -1192,7 +1295,10 @@
 						{{ nextLabel }}
 					</button>
 					<input
-						class="c-umbraco-forms__button c-umbraco-forms__button--submit"
+						class="
+							c-umbraco-forms__button
+							c-umbraco-forms__button--submit
+						"
 						:hidden="
 							currentPage !== pages.length - 1 ? 'hidden' : null
 						"
@@ -1212,6 +1318,13 @@
 
 <script>
 export default {
+	props: {
+		content: Object,
+		definitionsEndpoint: String,
+		postEndpoint: String,
+		id: String,
+		name: String,
+	},
 	data() {
 		return {
 			formEl: null,
@@ -1229,13 +1342,6 @@ export default {
 			invalidMap: new Map(),
 			dataReady: false,
 		};
-	},
-	props: {
-		content: Object,
-		definitionsEndpoint: String,
-		postEndpoint: String,
-		id: String,
-		name: String,
 	},
 	computed: {
 		pages() {
@@ -1263,6 +1369,16 @@ export default {
 			return this.definitions.nextLabel || 'Next';
 		},
 	},
+	watch: {
+		fieldsObject: {
+			handler() {
+				this.clearInvalid();
+				this.checkRules();
+				this.checkVisibility();
+			},
+			deep: true,
+		},
+	},
 	mounted() {
 		this.fetchDefinitions();
 	},
@@ -1282,7 +1398,9 @@ export default {
 				page.fieldsets.forEach((fieldset) => {
 					fieldset.columns.forEach((col) => {
 						col.fields.forEach((field) => {
-							this.flatFields.push(Object.assign({}, field, { page: index }));
+							this.flatFields.push(
+								Object.assign({}, field, { page: index })
+							);
 						});
 					});
 				});
@@ -1294,13 +1412,17 @@ export default {
 					alias: field.alias,
 					condition: field.condition,
 					required: field.required,
-					value: field.settings.defaultValue ? field.settings.defaultValue : '',
+					value: field.settings.defaultValue
+						? field.settings.defaultValue
+						: '',
 					type: field.type,
 					showIndicator:
-			this.definitions.fieldIndicationType === 'NoIndicator' ||
-			this.definitions.fieldIndicationType === 'MarkMandatoryFields'
-				? field.required
-				: !field.required,
+						this.definitions.fieldIndicationType ===
+							'NoIndicator' ||
+						this.definitions.fieldIndicationType ===
+							'MarkMandatoryFields'
+							? field.required
+							: !field.required,
 				};
 			});
 
@@ -1309,20 +1431,26 @@ export default {
 		getFieldsRules() {
 			const fields = {};
 			this.flatFields.forEach((field) => {
-				fields[field.id] =
-                Object.assign({}, field.condition, { visible: false });
+				fields[field.id] = Object.assign({}, field.condition, {
+					visible: false,
+				});
 			});
 			return fields;
 		},
 		getRules() {
 			const fields = [];
 			this.flatFields.forEach((field) => {
-				if (field.condition && field.condition.rules &&
-                field.condition.rules.length !== 0) {
-					const newArr = field.condition.rules.map(el => (
-						Object.assign({}, el, { dependant: field.id,
-							conditionMet: false })
-					));
+				if (
+					field.condition &&
+					field.condition.rules &&
+					field.condition.rules.length !== 0
+				) {
+					const newArr = field.condition.rules.map((el) =>
+						Object.assign({}, el, {
+							dependant: field.id,
+							conditionMet: false,
+						})
+					);
 					fields.push(...newArr);
 				}
 			});
@@ -1353,7 +1481,8 @@ export default {
 			if (item.operator === 'GreaterThen') {
 				if (
 					fields[item.field].value !== '' &&
-			parseInt(fields[item.field].value, 10) > parseInt(item.value, 10)
+					parseInt(fields[item.field].value, 10) >
+						parseInt(item.value, 10)
 				) {
 					item.conditionMet = true;
 				} else {
@@ -1363,7 +1492,8 @@ export default {
 			if (item.operator === 'LessThen') {
 				if (
 					fields[item.field].value !== '' &&
-			parseInt(fields[item.field].value, 10) < parseInt(item.value, 10)
+					parseInt(fields[item.field].value, 10) <
+						parseInt(item.value, 10)
 				) {
 					item.conditionMet = true;
 				} else {
@@ -1394,17 +1524,27 @@ export default {
 		},
 		checkVisibility() {
 			// eslint-disable-next-line no-restricted-syntax
-			for (const [key, value] of Object.entries(this.fieldVisibilityObject)) {
-				this.checkSingleFieldVisibility(key, value.actionType, value.logicType);
+			for (const [key, value] of Object.entries(
+				this.fieldVisibilityObject
+			)) {
+				this.checkSingleFieldVisibility(
+					key,
+					value.actionType,
+					value.logicType
+				);
 			}
 		},
 		checkSingleFieldVisibility(id, actionType, logicType) {
-			const rules = this.rulesArray.filter(rule => rule.dependant === id);
+			const rules = this.rulesArray.filter(
+				(rule) => rule.dependant === id
+			);
 
 			if (actionType === undefined || logicType === undefined) {
 				this.fieldVisibilityObject[id].visible = true;
 			} else if (actionType === 'Show' && logicType === 'All') {
-				const result = rules.find(rule => rule.conditionMet === false);
+				const result = rules.find(
+					(rule) => rule.conditionMet === false
+				);
 
 				if (result === undefined) {
 					this.fieldVisibilityObject[id].visible = true;
@@ -1412,7 +1552,7 @@ export default {
 					this.fieldVisibilityObject[id].visible = false;
 				}
 			} else if (actionType === 'Show' && logicType === 'Any') {
-				const result = rules.find(rule => rule.conditionMet === true);
+				const result = rules.find((rule) => rule.conditionMet === true);
 
 				if (result === undefined) {
 					this.fieldVisibilityObject[id].visible = false;
@@ -1420,7 +1560,9 @@ export default {
 					this.fieldVisibilityObject[id].visible = true;
 				}
 			} else if (actionType === 'Hide' && logicType === 'All') {
-				const result = rules.find(rule => rule.conditionMet === false);
+				const result = rules.find(
+					(rule) => rule.conditionMet === false
+				);
 
 				if (result === undefined) {
 					this.fieldVisibilityObject[id].visible = false;
@@ -1428,7 +1570,7 @@ export default {
 					this.fieldVisibilityObject[id].visible = true;
 				}
 			} else if (actionType === 'Hide' && logicType === 'Any') {
-				const result = rules.find(rule => rule.conditionMet === true);
+				const result = rules.find((rule) => rule.conditionMet === true);
 
 				if (result === undefined) {
 					this.fieldVisibilityObject[id].visible = true;
@@ -1439,14 +1581,16 @@ export default {
 		},
 		bindValues(field) {
 			const fieldSettings = Object.assign({}, field.settings, {
-				defaultValue: field.type.name === 'Checkbox'
-					? 'on'
-					: field.settings.defaultValue,
-
+				defaultValue:
+					field.type.name === 'Checkbox'
+						? 'on'
+						: field.settings.defaultValue,
 			});
-			const mergedField = Object.assign({}, field, { settings: {
-				fieldSettings,
-			} });
+			const mergedField = Object.assign({}, field, {
+				settings: {
+					fieldSettings,
+				},
+			});
 			return {
 				id: `uf-${field.id}`,
 				modelValue: this.fieldsObject[field.id].value,
@@ -1456,19 +1600,20 @@ export default {
 				setModelValue: this.setModelValue,
 				errors: this.formErrors[field.alias],
 				showIndicator:
-			this.definitions.fieldIndicationType === 'NoIndicator' ||
-			this.definitions.fieldIndicationType === 'MarkMandatoryFields'
-				? field.required
-				: !field.required,
+					this.definitions.fieldIndicationType === 'NoIndicator' ||
+					this.definitions.fieldIndicationType ===
+						'MarkMandatoryFields'
+						? field.required
+						: !field.required,
 				showLabel: field.settings.showLabel,
 				pattern: field.pattern,
 				placeholder: field.placeholder || field.settings.placeholder,
 				onInvalid: this.onInvalid,
 			};
 		},
-		bindDefaultValues(field) {
+		bindDefaultValues(field, index) {
 			return {
-				id: `uf-${field.id}`,
+				id: `uf-${field.id}` + (index ? `-${index}` : ''),
 				required: field.required,
 				name: field.alias,
 				pattern: field.pattern ? field.pattern : null,
@@ -1476,21 +1621,26 @@ export default {
 					? field.settings.maximumLength
 					: null,
 				placeholder:
-			field.placeholder || field.settings.placeholder
-				? field.placeholder || field.settings.placeholder
-				: null,
+					field.placeholder || field.settings.placeholder
+						? field.placeholder || field.settings.placeholder
+						: null,
 			};
 		},
 		onInvalid(event, field) {
 			event.target.setCustomValidity('');
 			if (
 				event.target.validity.patternMismatch &&
-		field.patternInvalidErrorMessage
+				field.patternInvalidErrorMessage
 			) {
 				this.invalidMap.set(field.alias, event.target);
-				event.target.setCustomValidity(field.patternInvalidErrorMessage);
+				event.target.setCustomValidity(
+					field.patternInvalidErrorMessage
+				);
 			}
-			if (event.target.validity.valueMissing && field.requiredErrorMessage) {
+			if (
+				event.target.validity.valueMissing &&
+				field.requiredErrorMessage
+			) {
 				this.invalidMap.set(field.alias, event.target);
 				event.target.setCustomValidity(field.requiredErrorMessage);
 			}
@@ -1513,7 +1663,7 @@ export default {
 			// multiple choice array
 			const multipeChoiceArray = [];
 			// eslint-disable-next-line no-restricted-syntax
-			for (const [id, field] of Object.entries(this.fieldsObject)) {
+			for (const [, field] of Object.entries(this.fieldsObject)) {
 				if (field.type.name !== 'File upload') {
 					if (field.type.name === 'Multiple choice') {
 						multipeChoiceArray.push(field.alias);
@@ -1534,7 +1684,7 @@ export default {
 				// the file name and the base 64 encoded file contents.
 				if (this.isFileUpload(value)) {
 					const fileName = value.name;
-					const fileContents = this.getFileAsBase64(value);
+					const fileContents = await this.getFileAsBase64(value);
 					// We could have multiple files on a field, so need to provide as an array.
 					if (!data.values[key]) {
 						data.values[key] = [];
@@ -1557,28 +1707,34 @@ export default {
 				body: JSON.stringify(data),
 			});
 
-			const json = await response.json();
-
-			if (json.status === 202 || json.status === 204) {
+			if (response.status === 202 || response.status === 204) {
 				this.formIsLoading = false;
 				this.formSuccess = true;
-			} else if (json.status === 422) {
+			} else if (response.status === 422) {
+				const json = await response.json();
 				this.formIsLoading = false;
 				this.formErrors = json.errors;
 
 				let goToPage = null;
 				/* eslint-disable */
 				for (const [key] of Object.entries(json.errors)) {
-					const field = this.flatFields.find(field => field.alias === key);
-					if (field && field.page < goToPage || field && goToPage === null) {
+					const field = this.flatFields.find(
+						(field) => field.alias === key
+					);
+					if (
+						(field && field.page < goToPage) ||
+						(field && goToPage === null)
+					) {
 						goToPage = field.page;
 					}
 				}
-                /* eslint-enable */
+				/* eslint-enable */
 				this.changePage(goToPage);
 			} else {
 				this.formIsLoading = false;
-				console.log(`Error (${response.status}): ${response.statusText}`);
+				console.log(
+					`Error (${response.status}): ${response.statusText}`
+				);
 			}
 		},
 		isFileUpload(value) {
@@ -1592,13 +1748,13 @@ export default {
 					const { result } = reader;
 					if (typeof result === 'string') {
 						resolve(
-							`data:${file.type};base64,${result.split(',')[1]}`,
+							`data:${file.type};base64,${result.split(',')[1]}`
 						);
 					} else {
-						reject('Error reading file as base64.');
+						reject(new Error('Error reading file as base64.'));
 					}
 				};
-				reader.onerror = error => reject(error);
+				reader.onerror = (error) => reject(error);
 			});
 		},
 		changePage(direction) {
@@ -1606,7 +1762,10 @@ export default {
 			if (typeof direction === 'number') {
 				this.currentPage = direction;
 			}
-			if (direction === 'next' && this.pages.length > this.currentPage + 1) {
+			if (
+				direction === 'next' &&
+				this.pages.length > this.currentPage + 1
+			) {
 				if (!this.$refs.formEl.reportValidity()) {
 					this.formIsLoading = false;
 					return;
@@ -1622,16 +1781,6 @@ export default {
 				this.currentPage--;
 			}
 			this.formIsLoading = false;
-		},
-	},
-	watch: {
-		fieldsObject: {
-			handler() {
-				this.clearInvalid();
-				this.checkRules();
-				this.checkVisibility();
-			},
-			deep: true,
 		},
 	},
 };
