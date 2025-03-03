@@ -116,7 +116,13 @@ export default async ({
 	params = {},
 	redirect,
 	route,
+	debug = false,
 }) => {
+	if (debug) {
+		console.group('Fetching data from ' + endpointUrl);
+		console.log('params:', params);
+		console.groupEnd();
+	}
 	try {
 		const response = await fetchUmbracoData(
 			route,
