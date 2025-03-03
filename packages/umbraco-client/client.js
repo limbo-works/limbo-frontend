@@ -31,11 +31,14 @@ export const fetchUmbracoData = (
 	});
 	urlSearchParams.delete('headers');
 	if (debug) {
+		const debugParams = { ...params };
+		delete debugParams.headers;
+
 		console.group(
 			'Fetching data from ' +
 				`${endpointUrl}?${urlSearchParams.toString()}`
 		);
-		console.log('params:', params);
+		console.log('params:', debugParams);
 		console.log('headers:', params?.headers);
 		console.groupEnd();
 	}
