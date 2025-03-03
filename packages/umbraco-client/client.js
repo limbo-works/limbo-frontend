@@ -32,7 +32,7 @@ export const fetchUmbracoData = (
 	urlSearchParams.delete('headers');
 	if (debug) {
 		console.group(
-			'Fetching data from endpoint:' +
+			'Fetching data from ' +
 				`${endpointUrl}?${urlSearchParams.toString()}`
 		);
 		console.log('params:', params);
