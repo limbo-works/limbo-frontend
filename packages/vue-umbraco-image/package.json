@@ -1,6 +1,6 @@
 {
   "name": "@limbo-works/vue-umbraco-image",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Vue component for rendering Umbraco content images",
   "author": "Saul Hardman <sha@limbo.works>",
   "license": "MIT",
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
-    "@limbo-works/vue-responsive-image": "^0.2.1"
+    "@limbo-works/vue-responsive-image": "^0.2.2"
   },
   "engines": {
     "node": ">=10"

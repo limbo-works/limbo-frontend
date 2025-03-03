@@ -1,6 +1,6 @@
 {
   "name": "@limbo-works/vue-responsive-image",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Vue component for rendering responsive images",
   "author": "Saul Hardman <sha@limbo.works>",
   "license": "MIT",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/vue-responsive-image@0.2.1...@limbo-works/vue-responsive-image@0.2.2) (2025-03-03)
+
+
+### Bug Fixes
+
+* linting ([45e359b](https://github.com/limbo-works/limbo-frontend/commit/45e359b4fc8712baa06f4905138d3950fd155dc5))
+
+
+
+
+
 ## [0.2.1](https://github.com/limbo-works/limbo-frontend/compare/@limbo-works/vue-responsive-image@0.2.0...@limbo-works/vue-responsive-image@0.2.1) (2021-10-12)
 
 **Note:** Version bump only for package @limbo-works/vue-responsive-image
