@@ -94,8 +94,7 @@ describe('VueResponsiveImage', () => {
 						const wrapper = shallowMount(VueResponsiveImage, {
 							propsData: {
 								src: '/example.jpg',
-								srcset:
-									'/example-small.jpg 100w, /example-medium.jpg 400w',
+								srcset: '/example-small.jpg 100w, /example-medium.jpg 400w',
 								sizes: '100vw',
 								lazyload: true,
 								fallback: true,
@@ -182,8 +181,7 @@ describe('VueResponsiveImage', () => {
 				shallowMount(VueResponsiveImage, {
 					propsData: {
 						src: '/example.jpg',
-						srcset:
-							'/example-small.jpg 100w, /example-medium.jpg 400w',
+						srcset: '/example-small.jpg 100w, /example-medium.jpg 400w',
 						sizes: 'auto',
 					},
 				})
@@ -193,8 +191,7 @@ describe('VueResponsiveImage', () => {
 				shallowMount(VueResponsiveImage, {
 					propsData: {
 						src: '/example.jpg',
-						srcset:
-							'/example-small.jpg 100w, /example-medium.jpg 400w',
+						srcset: '/example-small.jpg 100w, /example-medium.jpg 400w',
 						sizes: 'auto',
 						fallback: true,
 					},
@@ -209,8 +206,7 @@ describe('VueResponsiveImage', () => {
 				shallowMount(VueResponsiveImage, {
 					propsData: {
 						src: '/example.jpg',
-						srcset:
-							'/example-small.jpg 100w, /example-medium.jpg 400w',
+						srcset: '/example-small.jpg 100w, /example-medium.jpg 400w',
 					},
 				})
 			).toThrow(ValidationError);
@@ -222,8 +218,7 @@ describe('VueResponsiveImage', () => {
 					const wrapper = shallowMount(VueResponsiveImage, {
 						propsData: {
 							src: '/example.jpg',
-							srcset:
-								'/example-small.jpg 100w, /example-medium.jpg 400w',
+							srcset: '/example-small.jpg 100w, /example-medium.jpg 400w',
 							sizes: '100vw',
 							lazyload: true,
 						},
@@ -238,8 +233,7 @@ describe('VueResponsiveImage', () => {
 					const wrapper = shallowMount(VueResponsiveImage, {
 						propsData: {
 							src: '/example.jpg',
-							srcset:
-								'/example-small.jpg 100w, /example-medium.jpg 400w',
+							srcset: '/example-small.jpg 100w, /example-medium.jpg 400w',
 							sizes: '100vw',
 							placeholder:
 								'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=',
@@ -256,8 +250,7 @@ describe('VueResponsiveImage', () => {
 					const wrapper = shallowMount(VueResponsiveImage, {
 						propsData: {
 							src: '/example.jpg',
-							srcset:
-								'/example-small.jpg 100w, /example-medium.jpg 400w',
+							srcset: '/example-small.jpg 100w, /example-medium.jpg 400w',
 							sizes: '100vw',
 							lazyload: true,
 						},
@@ -270,8 +263,7 @@ describe('VueResponsiveImage', () => {
 					const wrapper = shallowMount(VueResponsiveImage, {
 						propsData: {
 							src: '/example.jpg',
-							srcset:
-								'/example-small.jpg 100w, /example-medium.jpg 400w',
+							srcset: '/example-small.jpg 100w, /example-medium.jpg 400w',
 							sizes: '100vw',
 							lazyload: true,
 						},
@@ -299,8 +291,7 @@ describe('VueResponsiveImage', () => {
 						const wrapper = shallowMount(VueResponsiveImage, {
 							propsData: {
 								src: '/example.jpg',
-								srcset:
-									'/example-small.jpg 100w, /example-medium.jpg 400w',
+								srcset: '/example-small.jpg 100w, /example-medium.jpg 400w',
 								sizes: '100vw',
 								lazyload: true,
 								fallback: true,
@@ -319,8 +310,7 @@ describe('VueResponsiveImage', () => {
 							const wrapper = shallowMount(VueResponsiveImage, {
 								propsData: {
 									src: '/example.jpg',
-									srcset:
-										'/example-small.jpg 100w, /example-medium.jpg 400w',
+									srcset: '/example-small.jpg 100w, /example-medium.jpg 400w',
 									sizes: '100vw',
 									lazyload: true,
 									fallback: true,
@@ -350,8 +340,7 @@ describe('VueResponsiveImage', () => {
 							const wrapper = shallowMount(VueResponsiveImage, {
 								propsData: {
 									src: '/example.jpg',
-									srcset:
-										'/example-small.jpg 100w, /example-medium.jpg 400w',
+									srcset: '/example-small.jpg 100w, /example-medium.jpg 400w',
 									sizes: '100vw',
 									lazyload: true,
 									fallback: true,

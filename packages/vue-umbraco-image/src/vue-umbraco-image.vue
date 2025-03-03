@@ -136,20 +136,19 @@ export default {
 						format,
 						type,
 
-						[this.$attrs.lazyload
-							? 'data-srcset'
-							: 'srcset']: this.srcset
-							.map(({ source, width, height }) =>
-								[
-									`${source}&format=${format}`,
-									`${width}w`,
-									this.includeHeightDescriptor &&
-										`${height}h`,
-								]
-									.filter(Boolean)
-									.join(' ')
-							)
-							.join(', '),
+						[this.$attrs.lazyload ? 'data-srcset' : 'srcset']:
+							this.srcset
+								.map(({ source, width, height }) =>
+									[
+										`${source}&format=${format}`,
+										`${width}w`,
+										this.includeHeightDescriptor &&
+											`${height}h`,
+									]
+										.filter(Boolean)
+										.join(' ')
+								)
+								.join(', '),
 					},
 				],
 				[]

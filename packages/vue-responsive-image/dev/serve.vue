@@ -1,6 +1,7 @@
 <script>
 import 'lazysizes';
 import Vue from 'vue';
+
 import VueResponsiveImage from '@/entry';
 
 export default Vue.extend({
