@@ -17,7 +17,8 @@ export const configure = (options) => ({ host, httpClient } = options);
 export const fetchUmbracoData = (
 	route,
 	params = {},
-	endpointUrl = UMBRACO_GET_DATA_ENDPOINT
+	endpointUrl = UMBRACO_GET_DATA_ENDPOINT,
+	debug = false
 ) => {
 	const urlSearchParams = new URLSearchParams({
 		appHost: host,
@@ -29,6 +30,15 @@ export const fetchUmbracoData = (
 		...params,
 	});
 	urlSearchParams.delete('headers');
+	if (debug) {
+		console.group(
+			'Fetching data from ' +
+				`${endpointUrl}?${urlSearchParams.toString()}`
+		);
+		console.log('params:', params);
+		console.log('headers:', params?.headers);
+		console.groupEnd();
+	}
 
 	return httpClient.get(`${endpointUrl}?${urlSearchParams.toString()}`, {
 		headers: params?.headers || {},
@@ -118,16 +128,12 @@ export default async ({
 	route,
 	debug = false,
 }) => {
-	if (debug) {
-		console.group('Fetching data from ' + endpointUrl);
-		console.log('params:', params);
-		console.groupEnd();
-	}
 	try {
 		const response = await fetchUmbracoData(
 			route,
 			params,
-			endpointUrl
+			endpointUrl,
+			debug
 		).then((response) => {
 			return onResponse ? onResponse(response) : response;
 		});
